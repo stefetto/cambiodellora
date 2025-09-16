@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cambio dell'Ora</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 2em;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .countdown {
+      font-size: 2em;
+      margin-top: 1em;
+      color: #e74c3c;
+    }
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌙 Cambio dell'Ora</h1>
+  <p>Scopri quando cambia l'ora legale e solare in Italia.</p>
+
+  <div class="countdown" id="countdown">Caricamento...</div>
+
+  <script>
+    // Imposta la data del prossimo cambio dell'ora (esempio: 27 ottobre 2025 alle 3:00)
+    const targetDate = new Date("October 27, 2025 03:00:00").getTime();
+
+    const countdown = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        countdown.innerHTML = "⏰ L'ora è cambiata!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `${days}g ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+
+  <footer>
+    © 2025 Cambiodellora.it — Tutti i diritti riservati
+  </footer>
+</body>
+</html>
