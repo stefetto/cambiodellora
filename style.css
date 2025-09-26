@@ -23,6 +23,13 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 /* ============================================
    Header e navigazione
 ============================================ */
@@ -235,7 +242,8 @@ footer {
     padding-left: 0;
   }
 
-  main {
+ main {
+    width: 100%;
     padding: 1rem;
   }
 
@@ -271,4 +279,5 @@ footer {
     padding: 0.75rem;
   }
 }
+
 
