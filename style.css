@@ -18,7 +18,11 @@ body {
   background: #f0f4f8;
   color: #333;
 }
-
+/* Protezione overflow e larghezza */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 /* ============================================
    Header e navigazione
 ============================================ */
@@ -267,3 +271,4 @@ footer {
     padding: 0.75rem;
   }
 }
+
