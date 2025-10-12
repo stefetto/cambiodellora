@@ -80,11 +80,21 @@ header {
 }
 
 /* Hero section */
-.hero {
+/* .hero {
   text-align: center;
   padding: 3rem 1rem;
   background: linear-gradient(to right, #e0f0ff, #f0f8ff);
 }
+*/
+.hero {
+  text-align: left;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #e0f0ff, #f0f8ff);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 
 .hero h1 {
   font-size: 2rem;
