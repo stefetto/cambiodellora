@@ -71,6 +71,63 @@
         <p>Può influenzare il ritmo circadiano, causando insonnia, stanchezza o irritabilità. Gli effetti variano da persona a persona.</p>
       </div>
     </section>
+ <section class="quiz">
+  <h2>🧠 Quiz: Sei un Maestro del Cambio dell’Ora?</h2>
+  <p>Rispondi alle 5 domande e scopri il tuo punteggio!</p>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. Con il cambio all'ora legale, la lancetta va avanti o indietro?</p>
+      <label><input type="radio" name="q1" value="1"> Avanti</label><br>
+      <label><input type="radio" name="q1" value="0"> Indietro</label>
+    </div>
+
+    <div class="question">
+      <p>2. Con il cambio all'ora solare si dorme di più o di meno?</p>
+      <label><input type="radio" name="q2" value="1"> Di più</label><br>
+      <label><input type="radio" name="q2" value="0"> Di meno</label>
+    </div>
+
+    <div class="question">
+      <p>3. Con il cambio all'ora legale, alla mattina è più chiaro o più scuro?</p>
+      <label><input type="radio" name="q3" value="0"> Più chiaro</label><br>
+      <label><input type="radio" name="q3" value="1"> Più scuro</label>
+    </div>
+
+   <div class="question">
+      <p>4. Con il cambio all'ora solare, le giornate sembrano più corte o più lunghe?</p>
+      <label><input type="radio" name="q4" value="1"> Più corte</label><br>
+      <label><input type="radio" name="q4" value="0"> Più lunghe</label>
+    </div>
+
+    <div class="question">
+      <p>5. Con il cambio all'ora legale c'è più luce la sera o al mattino?</p>
+      <label><input type="radio" name="q5" value="1"> La sera</label><br>
+      <label><input type="radio" name="q5" value="0"> Il mattino</label>
+    </div>
+
+    <div class="quiz-buttons">
+      <button type="button" onclick="calcolaPunteggio()">Verifica il tuo punteggio</button>
+      <button type="button" onclick="resetQuiz()">🔄 Riprova</button>
+    </div>
+  </form>
+
+  <div id="risultato" class="risultato"></div>
+</section>
+</main>
+<script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Cambiodellora.it — Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
+
+
+
+  
+  
+  
+  
   </main>
 <script src="script.js"></script>
   <footer>
