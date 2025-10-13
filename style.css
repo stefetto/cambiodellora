@@ -243,5 +243,27 @@ footer {
   text-align: center;
   margin: 2rem 0;
 }
+/* Evidenzia durata ora legale */
+table td.highlight {
+  background-color: #fffbe6;
+  font-weight: 600;
+  color: #d48806;
+  text-align: center;
+  border-radius: 4px;
+  cursor: help;
+}
+
+/* Centra le celle con date e orari */
+table td.center {
+  text-align: center;
+}
+
+/* Evidenzia l'intera riga dell'anno corrente */
+table tr.current-row td {
+  background-color: #ffe5e5;
+  color: #b71c1c;
+  font-weight: bold;
+}
+
 
 
