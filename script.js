@@ -47,3 +47,25 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+function calcolaPunteggio() {
+  let punteggio = 0;
+  for (let i = 1; i <= 5; i++) {
+    const risposta = document.querySelector(`input[name="q${i}"]:checked`);
+    if (risposta && risposta.value === "1") {
+      punteggio++;
+    }
+  }
+
+  const risultato = document.getElementById("risultato");
+  if (punteggio === 5) {
+    risultato.innerHTML = `<h3>🎉 Complimenti! Sei un <span class="maestro">Maestro del Cambio dell’Ora</span>! (${punteggio}/5)</h3>`;
+  } else {
+    risultato.innerHTML = `<h3>Hai totalizzato ${punteggio}/5. Riprova per diventare Maestro!</h3>`;
+  }
+}
+
+function resetQuiz() {
+  document.getElementById("quizForm").reset();
+  document.getElementById("risultato").innerHTML = "";
+}
+
