@@ -68,4 +68,28 @@ function resetQuiz() {
   document.getElementById("quizForm").reset();
   document.getElementById("risultato").innerHTML = "";
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const citazioni = [
+    "❝ Il tempo vola… soprattutto quando perdi un’ora di sonno.",
+    "❝ Cambio dell’ora: quel momento magico in cui il tuo forno e il microonde non sono più d’accordo.",
+    "❝ Un’ora avanti, un’ora indietro… ma il caffè resta sempre puntuale.",
+    "❝ Dormire un’ora in più: il sogno proibito che si avvera solo una volta l’anno.",
+    "❝ Il cambio dell’ora: quando anche gli orologi hanno bisogno di una pausa.",
+    "❝ Non è magia, è solo il cambio dell’ora che ti fa arrivare tardi con stile.",
+    "❝ Ora legale: il modo elegante per rubarti un’ora di sonno e chiamarlo progresso.",
+    "❝ Cambio dell’ora: il momento in cui scopri quanti orologi hai davvero in casa.",
+    "❝ Un piccolo passo per l’orologio, un grande salto per la confusione generale.",
+    "❝ Cambio dell’ora: quel giorno in cui anche il tempo si prende gioco di te."
+  ];
+
+  const casuale = Math.floor(Math.random() * citazioni.length);
+  const citazioneElement = document.getElementById("citazione");
+  if (citazioneElement) {
+    citazioneElement.textContent = citazioni[casuale];
+    citazioneElement.style.fontStyle = "italic";
+    citazioneElement.style.marginTop = "1em";
+    citazioneElement.style.color = "#2a5d9f"; // Cambia colore qui se vuoi
+    citazioneElement.style.textAlign = "center";
+  }
+});
 
