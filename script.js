@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /***************************************************
  * SIMULAZIONE DATA 🔥
  ***************************************************/
-const offsetGiorniTest = 2;
+const offsetGiorniTest = 0;
 
 function getNow() {
   const now = new Date();
