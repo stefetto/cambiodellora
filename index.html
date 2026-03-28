@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambio dell’Ora 2026 – Ora Legale, Ora Solare</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* OROLOGIO DIGITALE */
+    #clockContainer {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #digitalClock {
+      background: #000;
+      color: #fff;
+      font-family: "Courier New", monospace;
+      font-size: 2.8em;
+      padding: 18px 24px;
+      border-radius: 10px;
+      display: inline-block;
+      letter-spacing: 3px;
+    }
+
+    #oraLegaleText {
+      margin-top: 12px;
+      font-weight: bold;
+      color: black;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">... cambiodellora.it ...</div>
+  <button class="menu-toggle">&#9776;</button>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="storico.html">Storico</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="consigli.html">Consigli</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>⏰ Benvenuto sul sito del Cambio dell'Ora</h1>
+
+    <p>
+      Dal 2025 <strong> cambiodellora.it </strong> è la guida aggiornata al cambio dell’ora.
+    </p>
+
+    <p id="citazione" style="font-style: italic; margin-top: 1em; color: #2a5d9f;"></p>
+  </div>
+</section>
+
+<section class="countdown-section">
+
+  <!-- TITOLO DINAMICO -->
+  <h2 id="titoloSezione">🕒 Prossimo cambio dell’ora tra :</h2>
+
+  <!-- COUNTDOWN -->
+  <div id="countdown" class="countdown-box">⏳ Calcolo in corso...</div>
+
+  <!-- BOX GIALLO -->
+  <div id="infoBox" style="
+    margin: 26px auto 0 auto;
+    max-width: 460px;
+    padding: 18px 24px;
+    background: #fff7a8;
+    border: 3px solid #d40000;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #002b80;
+    text-align: center;
+  ">
+
+    <span style="font-size: 1.9em;">🕑</span>
+
+    <span style="flex: 1; padding: 0 12px;">
+      SI SPOSTANO LE LANCETTE AVANTI DI UN'ORA (Ora Legale)
+      <p></p>
+      SI DORME UN'ORA IN MENO ...
+    </span>
+
+    <span style="font-size: 1.9em;">🕒</span>
+  </div>
+
+  <!-- OROLOGIO -->
+  <div id="clockContainer">
+    <div id="oraLegaleText">
+      ORA LEGALE IN CORSO - Controllate i vostri orologi
+    </div>
+    <div id="digitalClock"></div>
+  </div>
+
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h2>📜 Storico</h2>
+    <a href="storico.html">Scopri →</a>
+  </div>
+
+  <div class="card">
+    <h2>💡 Consigli</h2>
+    <a href="consigli.html">Leggi →</a>
+  </div>
+
+  <div class="card">
+    <h2>📰 Notizie</h2>
+    <a href="notizie.html">Vai →</a>
+  </div>
+
+  <div class="card">
+    <h2>🛍️ Prodotti</h2>
+    <a href="prodotti.html">Esplora →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Cambiodellora.it</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
