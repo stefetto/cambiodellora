@@ -66,7 +66,7 @@ function updateSystem() {
   // DOPO CAMBIO
   else if (now >= dataCambioLegale && now < fine) {
 
-  //  titolo.textContent = "ORA LEGALE IN CORSO - Controllate i vostri orologi";
+  titolo.textContent = "ORA LEGALE IN CORSO - Controllate i vostri orologi";
 
     countdown.style.display = "none";
     box.style.display = "none";
